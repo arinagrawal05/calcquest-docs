@@ -19,135 +19,145 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arinagrawal05.github.io/calcquest-docs/">
 
-  <!-- Docsify Theme - Dark -->
   <!-- Docsify Theme - Vue (Layout) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
   <style>
     :root {
       --base-font-size: 16px;
       --theme-color: #42b983;
     }
 
-    /* Dark theme styles */
-    html[data-theme='dark'] {
-      --base-background-color: #1e1e1e;
-      --base-color: #e0e0e0;
-      --sidebar-background: #252525;
-      --sidebar-nav-link-color: #b0b0b0;
-      --sidebar-nav-link-color--active: #42b983;
-      --sidebar-nav-link-color--hover: #42b983;
-      --cover-background-color: #1e1e1e;
-      --search-background: #2d2d2d;
-      --search-input-color: #e0e0e0;
-      --code-inline-background: #2d2d2d;
-      --code-inline-color: #e06c75;
-      --blockquote-background-color: #2d2d2d;
-      --blockquote-color: #b0b0b0;
+    /* Permanent Dark Theme Styles */
+    body {
+      background-color: #1e1e1e !important;
+      color: #e0e0e0 !important;
     }
 
-    html[data-theme='dark'] body {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
+    /* Sidebar */
+    .sidebar {
+      background-color: #252525 !important;
+      border-right: 1px solid #333 !important;
     }
 
-    html[data-theme='dark'] .sidebar {
-      background-color: #252525;
-      border-right: 1px solid #333;
+    .sidebar-nav a {
+      color: #b0b0b0 !important;
     }
 
-    html[data-theme='dark'] .sidebar-nav a {
-      color: #b0b0b0;
+    .sidebar-nav a:hover,
+    .sidebar-nav a.active {
+      color: #42b983 !important;
     }
 
-    html[data-theme='dark'] .sidebar-nav a:hover,
-    html[data-theme='dark'] .sidebar-nav a.active {
-      color: #42b983;
+    /* Main Content */
+    .markdown-section {
+      background-color: #1e1e1e !important;
+      color: #e0e0e0 !important;
     }
 
-    html[data-theme='dark'] .markdown-section {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4,
+    .markdown-section h5,
+    .markdown-section h6 {
+      color: #ffffff !important;
     }
 
-    html[data-theme='dark'] .markdown-section h1,
-    html[data-theme='dark'] .markdown-section h2,
-    html[data-theme='dark'] .markdown-section h3,
-    html[data-theme='dark'] .markdown-section h4 {
-      color: #ffffff;
+    .markdown-section a {
+      color: #42b983 !important;
+      text-decoration: none;
     }
 
-    html[data-theme='dark'] .markdown-section a {
-      color: #42b983;
+    .markdown-section a:hover {
+      text-decoration: underline;
     }
 
-    html[data-theme='dark'] .markdown-section code {
-      background-color: #2d2d2d;
-      color: #e06c75;
+    /* Code Blocks */
+    .markdown-section code {
+      background-color: #2d2d2d !important;
+      color: #e06c75 !important;
     }
 
-    html[data-theme='dark'] .markdown-section pre {
-      background-color: #2d2d2d;
+    .markdown-section pre {
+      background-color: #2d2d2d !important;
     }
 
-    html[data-theme='dark'] .markdown-section blockquote {
-      background-color: #2d2d2d;
-      border-left-color: #42b983;
-      color: #b0b0b0;
+    .markdown-section pre code {
+      color: #abb2bf !important;
     }
 
-    html[data-theme='dark'] .markdown-section table th,
-    html[data-theme='dark'] .markdown-section table td {
-      border-color: #444;
+    /* Blockquotes */
+    .markdown-section blockquote {
+      background-color: #2d2d2d !important;
+      border-left: 4px solid #42b983 !important;
+      color: #b0b0b0 !important;
+      padding: 10px 15px;
+      margin: 1em 0;
     }
 
-    html[data-theme='dark'] .markdown-section table tr:nth-child(2n) {
-      background-color: #252525;
+    /* Tables */
+    .markdown-section table th,
+    .markdown-section table td {
+      border-color: #444 !important;
+      background-color: transparent !important;
     }
 
-    html[data-theme='dark'] .search input {
-      background-color: #2d2d2d;
-      color: #e0e0e0;
-      border-color: #444;
+    .markdown-section table th {
+      background-color: #2d2d2d !important;
     }
 
-    html[data-theme='dark'] .search .matching-post {
-      background-color: #2d2d2d;
-      border-color: #444;
+    .markdown-section table tr:nth-child(2n) {
+      background-color: #252525 !important;
     }
 
-    /* Theme toggle button */
-    .theme-toggle {
-      position: fixed;
-      top: 15px;
-      right: 20px;
-      z-index: 100;
-      background: none;
-      border: 2px solid #42b983;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
+    /* Search Input */
+    .search input {
+      background-color: #2d2d2d !important;
+      color: #e0e0e0 !important;
+      border-color: #444 !important;
     }
 
-    .theme-toggle:hover {
-      background-color: #42b983;
-      color: white;
+    .search .matching-post {
+      background-color: #2d2d2d !important;
+      border-color: #444 !important;
     }
 
-    html[data-theme='dark'] .theme-toggle {
-      color: #e0e0e0;
+    .search .search-keyword {
+      color: #e06c75 !important;
     }
 
-    html[data-theme='light'] .theme-toggle {
-      color: #333;
+    /* App Nav */
+    .app-nav {
+      background-color: #1e1e1e !important;
     }
 
-    /* Store badges */
+    /* GitHub Corner */
+    .github-corner svg {
+      fill: #42b983 !important;
+      color: #1e1e1e !important;
+    }
+
+    /* Scrollbars */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1e1e1e;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Store Badges */
     .store-badges {
       display: flex;
       gap: 15px;
@@ -159,39 +169,37 @@
       height: 50px;
       width: auto;
     }
+
+    /* Twitter Embeds */
+    .twitter-tweet {
+      margin: 1em 0 !important;
+    }
+
+    /* Misc */
+    .markdown-section strong {
+      color: #ffffff !important;
+      font-weight: 600;
+    }
+
+    .markdown-section hr {
+      border-color: #444 !important;
+    }
+
+    /* Fix menu icon in mobile view */
+    .sidebar-toggle {
+      background-color: #252525 !important;
+    }
+
+    .sidebar-toggle span {
+      background-color: #e0e0e0 !important;
+    }
   </style>
 </head>
 
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode">
-    <span id="theme-icon">☀️</span>
-  </button>
-
   <div id="app">Loading...</div>
 
   <script>
-    // Initialize dark theme by default
-    (function () {
-      const savedTheme = localStorage.getItem('docsify-theme') || 'dark';
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      updateThemeIcon(savedTheme);
-    })();
-
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('docsify-theme', newTheme);
-      updateThemeIcon(newTheme);
-    }
-
-    function updateThemeIcon(theme) {
-      const icon = document.getElementById('theme-icon');
-      if (icon) {
-        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
-      }
-    }
-
     window.$docsify = {
       name: 'CalcQuest',
       repo: 'https://github.com/arinagrawal05/calcquest-docs',
