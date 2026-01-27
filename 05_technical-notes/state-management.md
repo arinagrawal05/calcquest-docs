@@ -4,11 +4,11 @@ This document describes how CalcQuest manages application state.
 
 ## Framework
 
-CalcQuest uses **Provider**, a state management solution recommended by the Flutter team. Provider integrates naturally with Flutter's widget tree and provides a straightforward way to share state across the application.
+CalcQuest uses **GetX**, a high-performance state management solution for Flutter. GetX provides a simplified way to manage reactive state, dependency injection, and route management without the complexity of boilerplate code.
 
 ## Key State Objects
 
-### GameProvider
+### GameController
 
 Manages the state of an active puzzle session.
 
@@ -19,7 +19,7 @@ Manages the state of an active puzzle session.
 - Win/lose conditions
 - Undo functionality
 
-### DashboardProvider
+### DashboardController
 
 Handles data displayed on the main dashboard and overall progression.
 
@@ -36,7 +36,7 @@ Manages audio playback throughout the application.
 - Background music state
 - Volume/mute settings
 
-### SettingsProvider
+### SettingsController
 
 Stores user preferences.
 
@@ -63,15 +63,15 @@ When signed in, progress can be synced to Firebase. This enables cross-device co
 
 ## State Lifecycle
 
-1. **Initialization**: On app launch, providers load persisted state from local storage.
-2. **Updates**: As players interact with the game, providers update state and notify listeners.
+1. **Initialization**: On app launch, controllers load persisted state from local storage.
+2. **Updates**: As players interact with the game, controllers update state reactively.
 3. **Persistence**: Changes are saved to local storage and, if signed in, synced to the cloud.
 4. **Cleanup**: On logout or account deletion, relevant state is cleared.
 
 ## Separation of Concerns
 
-State management is kept separate from UI code. Widgets read state from providers and dispatch actions, but do not contain business logic. This makes the codebase easier to test and maintain.
+State management is kept separate from UI code. Widgets interact with controllers to read reactive state and dispatch actions, ensuring business logic is decoupled from the view layer.
 
 ## Scalability
 
-The current provider-based architecture has scaled adequately for CalcQuest's complexity. If significant new features require more sophisticated state coordination, migration to a more advanced solution (such as Riverpod or Bloc) could be considered.
+The current GetX-based architecture has scaled efficiently for CalcQuest's complexity. Its reactive nature allows for high performance even as more features are added.

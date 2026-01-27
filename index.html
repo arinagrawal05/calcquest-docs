@@ -212,7 +212,16 @@
       homepage: 'README.md',
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
-      }
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            if (window.twttr && window.twttr.widgets) {
+              window.twttr.widgets.load();
+            }
+          });
+        }
+      ]
     }
   </script>
 

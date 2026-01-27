@@ -7,7 +7,7 @@ CalcQuest is an indie mobile math puzzle game developed by Arin Agrawal. The gam
 The fundamental gameplay loop involves:
 
 1. Starting with a number displayed on the calculator screen.
-2. Using available operations (addition, subtraction, multiplication, division, and special modifiers) to transform that number.
+2. Using available operations (addition, subtraction, multiplication, division, and other 10+ supported operations) to transform that number.
 3. Reaching an exact target number within a limited number of moves.
 
 This structure turns arithmetic into puzzle-solving rather than rote calculation.
@@ -38,7 +38,7 @@ CalcQuest is designed for:
 - Casual puzzle game players
 - Parents seeking educational content for children
 - Anyone who enjoys brain teasers and logic puzzles
-- Players interested in user-generated content and community sharing
+
 
 ## Developer Background
 

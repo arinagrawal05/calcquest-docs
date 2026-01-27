@@ -23,7 +23,7 @@ Levels are stored as structured data containing:
 - Move limit
 - Optional metadata (hints, world assignment, difficulty tags)
 
-## Procedural Generation (Endless Modes)
+## Level Generation (Endless Modes)
 
 Endless modes generate puzzles algorithmically to provide infinite content.
 

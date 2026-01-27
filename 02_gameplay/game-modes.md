@@ -29,7 +29,7 @@ Procedurally generated puzzle sequences that continue indefinitely until the pla
 - Sessions end when the player fails to solve a puzzle within constraints (time, moves, or other rules).
 - Scores are tracked for high-score competition.
 
-### Variants
+<!-- ### Variants
 
 Different endless modes may feature:
 
@@ -40,15 +40,16 @@ Different endless modes may feature:
 
 ## Survival Mode
 
-A variant of endless play with additional challenge layers, such as health systems where incorrect answers reduce remaining attempts.
+A variant of endless play with additional challenge layers, such as health systems where incorrect answers reduce remaining attempts. -->
 
 ## Custom Levels
 
-Players can create puzzles using the in-game level editor. Created levels can be:
+Players can create campaign levels using the in-game level editor. Created levels can be:
 
 - Played locally
 - Shared via **QR codes** (scannable images)
-- Shared via **share codes** (text strings)
+- Shared via **share codes** 
+
 
 Other players can import and play these custom levels, extending the game's content beyond the handcrafted campaign.
 

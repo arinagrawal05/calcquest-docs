@@ -7,7 +7,10 @@ This document provides a high-level overview of CalcQuest's technical architectu
 - **Framework**: Flutter
 - **Language**: Dart
 - **Platforms**: Android, iOS
-- **Backend Services**: Firebase (for analytics, crash reporting, remote configuration)
+- **Backend Services**: Firebase (for DB, analytics, crash reporting, remote configuration)
+- **Advertising**: Google AdMob
+- **Analytics**: Mixpanel
+- **In-app Purchases**: RevenueCat
 - **Authentication**: Google Sign-In, Sign in with Apple
 - **Leaderboards**: Google Play Games Services
 
@@ -52,15 +55,14 @@ Key state objects include:
 
 ## Navigation
 
-Navigation uses Flutter's Navigator with named routes. Deep links are supported for level sharing functionality.
+Navigation uses GoRouter with named routes. Deep links are supported for level sharing functionality.
 
 ## Platform-Specific Considerations
 
 ### Android
 
 - Uses Google Play Games Services for leaderboards and achievements.
-- AdMob integration for advertisements.
-
+ 
 ### iOS
 
 - Uses Game Center where applicable.

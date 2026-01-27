@@ -1,6 +1,7 @@
 # UX Decisions
 
-This document explains key user experience decisions in CalcQuest and the reasoning behind them.
+**Why doesn't CalcQuest have a lives system?**
+ Every design choice—from no energy timers to gem-based hints—stems from one principle: *frustration-free learning*. Here's how we turned "math anxiety" into "one more level" addiction.
 
 ## Calculator Interface
 

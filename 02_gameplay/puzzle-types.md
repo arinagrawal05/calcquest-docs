@@ -11,55 +11,32 @@ All puzzles share a common foundation:
 3. A set of **available operations** to apply.
 4. Constraints such as **move limits**.
 
-## Standard Puzzles
+## Standard Puzzles (Campaign Mode)
 
-The most common puzzle type. Players have a starting number, a target number, and a set of operations. The goal is to reach the target in a specified number of moves or fewer.
+These are the puzzle types used in the curated campaign levels. Campaign levels consist solely of these standard puzzles and do **not** mix with endless‑mode or procedural puzzles.
 
-### Example
+- **Missing Symbol Puzzles** – Players guess the missing math symbol to complete an equation. [2][3]
+- **Square Root Challenges** – Cracking clever square‑root problems. [2][3]
+- **Number Pair Matching** – Matching number pairs that hide secret logic. [2][3]
+- **Magic Triangle Puzzles** – Decoding the mystery of magic triangles. [2][3]
+- **Mental Arithmetic Levels** – Solving math problems directly in the head. [2][3]
+- **Quick Calculation Challenges** – Timed puzzles requiring racing against the clock. [2][3]
+- **Strategy‑Based Number Grids** – Unlocking and solving number grids through strategic approaches. [2][3]
+- **Picture‑Based Math Clues** – Finding math clues hidden inside pictures. [2][3]
+- **Number Pyramids** – Climbing through layers of number pyramids. [2][3]
+- **True or False Logic Checks** – Testing accuracy through true/false logic problems. [2][3]
+- **Multiple Choice Puzzles** – Hunting for the one correct answer among tricky options. [2][3]
 
-- Start: 0
-- Target: 10
-- Operations: +5, ×2
-- Move limit: 3
-- Solution: +5, +5 (2 moves) or +5, ×2 (2 moves reaching 10)
+## Endless Puzzles (Procedural / Endless Modes)
 
-## Operation-Locked Puzzles
+In endless modes, puzzles are generated algorithmically and can reuse the same categories above, but they are presented without a fixed level structure, allowing infinite play.
 
-Some puzzles restrict which operations are available. This forces players to find creative solutions using a limited toolset.
+### Types of Endless Puzzles
 
-### Variations
+- **Operation‑Locked Endless Puzzles** – Limited operation sets.
+- **Multi‑Step Endless Puzzles** – Require longer sequences of operations.
+- **Negative Number Endless Puzzles** – Involve working with negative values.
+- **Special Operation Endless Puzzles** – Include reverse, delete, append, replace.
+- **Constraint Endless Puzzles** – Additional constraints like no specific digit, stay positive, exact moves.
 
-- Addition only
-- Multiplication and division only
-- Single-digit operations only
-
-## Multi-Step Puzzles
-
-Complex puzzles where the solution requires a specific sequence of many operations. These test planning and foresight rather than arithmetic speed.
-
-## Negative Number Puzzles
-
-Puzzles that require working with or through negative numbers to reach the target. This adds complexity for players who may not immediately consider subtracting past zero.
-
-## Special Operation Puzzles
-
-Some puzzles introduce non-standard operations:
-
-- **Reverse**: Reverses the digits of the current number.
-- **Delete**: Removes the last digit.
-- **Append**: Adds a digit to the end of the current number.
-- **Replace**: Substitutes one digit for another.
-
-These operations require thinking beyond standard arithmetic.
-
-## Constraint Puzzles
-
-Puzzles with additional constraints beyond move limits:
-
-- **No specific digit**: Cannot have a certain digit appear at any step.
-- **Stay positive**: Cannot go negative during the solution.
-- **Exact moves**: Must use exactly the specified number of moves.
-
-## Procedural Puzzles (Endless Modes)
-
-In endless modes, puzzles are generated algorithmically. The generator ensures each puzzle is solvable and adjusts parameters based on the session's difficulty level.
+These endless puzzles provide continuous challenges beyond the curated campaign experience.

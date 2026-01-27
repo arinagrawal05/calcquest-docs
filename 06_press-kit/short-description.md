@@ -10,12 +10,8 @@ A calculator game that makes math fun.
 
 ---
 
-**Elevator pitch (50 words):**
+**Elevator pitch:**
 
 CalcQuest is a puzzle game built around a simple idea: reach the target number using calculator operations. With 350+ handcrafted levels, endless modes, and a level editor for creating and sharing puzzles, CalcQuest transforms arithmetic into an engaging brain-teaser for all ages.
 
----
 
-**App Store short description (80 characters max):**
-
-Solve math puzzles using a calculator. 350+ levels, endless modes, level editor.

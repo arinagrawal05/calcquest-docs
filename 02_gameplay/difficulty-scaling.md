@@ -1,7 +1,5 @@
 # Difficulty Scaling
 
-This document describes how CalcQuest manages difficulty progression across its content.
-
 ## Campaign Progression
 
 ### World-Based Scaling
@@ -49,4 +47,4 @@ CalcQuest aims to be approachable for players of varying skill levels:
 
 ## No Difficulty Selection
 
-CalcQuest does not include an explicit difficulty selector (e.g., Easy/Medium/Hard). Difficulty is embedded in the content structure itself—players who seek challenge progress to later worlds or endless modes.
+CalcQuest does not include an explicit difficulty selector (e.g., Easy/Medium/Hard). Difficulty is embedded in the content structure itself in campaign mode - players who seek challenge progress to later worlds or endless modes.
