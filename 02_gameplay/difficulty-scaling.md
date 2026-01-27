@@ -1,6 +1,5 @@
-# Difficulty Scaling
-
-## Campaign Progression
+**Easy to learn, hard to master.** 
+In CalcQuest, difficulty isn't a setting—it's a journey. From gentle introductions in World 1 to the logic-melting challenges of late-game campaign and survival modes, here is how we scale the "math-mountain."
 
 ### World-Based Scaling
 

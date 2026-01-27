@@ -1,6 +1,7 @@
 # Keywords
 
-This document lists keywords and phrases relevant to CalcQuest for SEO and discoverability purposes.
+**Speak the language of CalcQuest.**
+This directory of search terms and semantic tags helps humans, search engines, and LLMs correctly identify and categorize the unique "calculator-puzzle" experience.
 
 ## Primary Keywords
 

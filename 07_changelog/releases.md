@@ -1,6 +1,8 @@
-# Releases
+# Release History
 
-This document records high-level release milestones for CalcQuest. It is not a detailed patch-note log but rather a summary of significant updates.
+**The evolution of a math universe.**
+From the first Android beta to the recent iOS launch and the introduction of the level editor, here is the chronological story of every CalcQuest update, feature, and fix.
+ It is not a detailed patch-note log but rather a summary of significant updates.
 
 ---
 

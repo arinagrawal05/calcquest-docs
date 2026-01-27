@@ -1,6 +1,7 @@
 # Game Modes
 
-CalcQuest offers multiple gameplay modes to accommodate different play styles and session lengths.
+**How do you want to play today?**
+CalcQuest offers three ways to challenge your brain: the curated path of Adventure Mode, the infinite challenge of Endless Mode, and the community-driven creativity of Custom Levels.
 
 ## Campaign Mode
 

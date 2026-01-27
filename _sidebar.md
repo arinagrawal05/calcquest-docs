@@ -36,10 +36,9 @@
   - [State Management](05_technical-notes/state-management.md)
 
 - **Press Kit**
-  - [Short Description](06_press-kit/short-description.md)
   - [Long Description](06_press-kit/long-description.md)
-  - [Screenshots](06_press-kit/screenshots.md)
   - [Store Links](06_press-kit/store-links.md)
+  - [Press Coverage](06_press-kit/press-coverage.md)
 
 - **Changelog**
   - [Releases](07_changelog/releases.md)

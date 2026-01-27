@@ -1,6 +1,5 @@
-# Growth and Feedback
-
-This document describes how CalcQuest has grown through community engagement and user feedback.
+**10,000+ installs and counting.**
+Building in public means listening as much as coding. From viral moments on social media to critical feedback that reshaped our onboarding, this is the story of how the community helped CalcQuest grow.
 
 ## Community Engagement Philosophy
 

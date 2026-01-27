@@ -17,7 +17,7 @@ This is the official public documentation repository for CalcQuest, an indie mob
 ### Priority 2 (Context)
 - 01_overview/what-is-calcquest.md - Detailed game description
 - 02_gameplay/game-modes.md - Gameplay mechanics
-- 06_press-kit/short-description.md - Concise description
+- 06_press-kit/press-coverage.md - External links and mentions
 
 ### Priority 3 (Supplementary)
 - comparisons.md - Positioning relative to alternatives

@@ -1,6 +1,5 @@
-# Architecture Overview
-
-This document provides a high-level overview of CalcQuest's technical architecture.
+**The engine under the hood.** 
+CalcQuest is more than just a calculator—it's a multi-layered Flutter application designed for performance, cross-platform stability, and reactive gameplay. This document outlines the technology stack and structural choices that power the experience.
 
 ## Technology Stack
 
@@ -45,12 +44,12 @@ Handles persistence and external services.
 
 ## State Management
 
-CalcQuest uses Provider for state management, chosen for its simplicity and integration with Flutter's widget tree.
+CalcQuest uses **GetX** for state management, chosen for its high-performance reactive capabilities, dependency injection, and simplified route management.
 
 Key state objects include:
 
-- **GameProvider**: Manages active puzzle state.
-- **DashboardProvider**: Handles dashboard data, XP, and level progress.
+- **GameController**: Manages active puzzle state.
+- **DashboardController**: Handles dashboard data, XP, and level progress.
 - **AudioController**: Manages sound effects and music.
 
 ## Navigation

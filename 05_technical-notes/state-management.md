@@ -1,6 +1,5 @@
-# State Management
-
-This document describes how CalcQuest manages application state.
+**Reactive gameplay, simplified.** 
+How does CalcQuest keep 350+ levels, XP, and audio sync'd across a shared user experience? By leveraging GetX's high-performance controller-based state management, we ensure a smooth and responsive experience for every player. 
 
 ## Framework
 

@@ -1,6 +1,7 @@
 # Puzzle Generation
 
-This document describes how puzzles are created in CalcQuest, covering both handcrafted content and procedural generation.
+**Designing the perfect challenge.**
+Whether it's a handcrafted campaign level or an algorithmically generated endless puzzle, every challenge in CalcQuest is built to ensure solvability and "aha!" moments. Here is how we build the puzzles that power the game.
 
 ## Handcrafted Levels
 

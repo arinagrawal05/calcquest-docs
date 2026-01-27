@@ -1,6 +1,7 @@
 # Mistakes and Lessons
 
-This document candidly discusses challenges, mistakes, and lessons learned during CalcQuest development.
+**Failure is just another operation.**
+No indie game is built without wrong turns. From "tutorial-less" confusion to complex state-management choices, these are the lessons learned in the trenches of development.
 
 ## Technical Lessons
 

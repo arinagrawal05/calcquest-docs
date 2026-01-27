@@ -1,6 +1,7 @@
 # Contributing
 
-Thank you for your interest in contributing to the CalcQuest documentation repository.
+**Join the quest.** 
+CalcQuest is a labor of love, and its documentation is no different. Whether you're fixing a typo or translating concepts into a new language, this guide explains how you can help build the most comprehensive math-puzzle knowledge base. 
 
 ## Purpose of This Repository
 

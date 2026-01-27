@@ -1,6 +1,7 @@
 # Glossary
 
-This document defines terminology used throughout CalcQuest documentation and gameplay.
+**The toolkit of the trade.** 
+From "Target Numbers" to "Move Limits" and the specifics of "Special Operations," this glossary defines the structural concepts and technical terms that make CalcQuest unique. 
 
 ## Game Concepts
 

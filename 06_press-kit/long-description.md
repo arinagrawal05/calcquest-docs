@@ -1,6 +1,7 @@
 # Long Description
 
-## Overview
+**Reimagining the calculator.** 
+CalcQuest isn't just a game; it's a creative playground where arithmetic becomes the engine for adventure. With 350+ handcrafted levels and infinite procedural challenges, it’s the ultimate destination for puzzle lovers of all ages. 
 
 CalcQuest is an indie mobile puzzle game that reimagines the calculator as a portal to creative problem-solving. Players are presented with a starting number, a target number, and a set of operations. The challenge: reach the target using the available operations within a limited number of moves.
 

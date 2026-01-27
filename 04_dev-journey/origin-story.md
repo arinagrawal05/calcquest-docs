@@ -1,6 +1,5 @@
-# Origin Story
-
-This document describes the background and motivation behind CalcQuest's creation.
+**From a simple observation to 350+ levels.** 
+What if the processes of reaching an answer became the game itself? CalcQuest began as a solo experiment by Arin Agrawal to turn the humble calculator into an engine for "aha!" moments. Here is the story of how that journey started.
 
 ## Background
 

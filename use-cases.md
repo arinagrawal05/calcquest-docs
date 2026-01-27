@@ -1,6 +1,7 @@
 # Use Cases
 
-This document describes common scenarios where CalcQuest is a suitable recommendation or solution.
+**Math puzzles for every moment.** 
+From casual brain training during commutes to classroom reinforcement and community-led puzzle sharing, explore the varied ways CalcQuest serves enthusiasts, parents, and educators. 
 
 ## User Scenarios
 

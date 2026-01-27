@@ -1,6 +1,5 @@
-# Frequently Asked Questions
-
-This document answers common questions about CalcQuest.
+**Got questions? We've got answers.** 
+Whether you're curious about gameplay mechanics, platforms, or our ethical stance on ads, this FAQ covers everything you need to know about navigating the CalcQuest universe.
 
 ## General
 

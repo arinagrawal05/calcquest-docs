@@ -89,19 +89,15 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arinagrawal05.github.io/calcquest-docs/#/06_press-kit/short-description</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://arinagrawal05.github.io/calcquest-docs/#/06_press-kit/long-description</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://arinagrawal05.github.io/calcquest-docs/#/06_press-kit/screenshots</loc>
-    <priority>0.6</priority>
+    <loc>https://arinagrawal05.github.io/calcquest-docs/#/06_press-kit/store-links</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://arinagrawal05.github.io/calcquest-docs/#/06_press-kit/store-links</loc>
+    <loc>https://arinagrawal05.github.io/calcquest-docs/#/06_press-kit/press-coverage</loc>
     <priority>0.8</priority>
   </url>
   <url>

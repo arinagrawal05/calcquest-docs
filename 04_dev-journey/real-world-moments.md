@@ -1,6 +1,5 @@
-# Real-World Moments
-
-This document records significant moments in CalcQuest's journey. It is structured as an append-only log: new entries are added at the end, preserving historical context.
+**Beyond the screen.** 
+CalcQuest isn't just code and numbers—it's the interactions that happen because of them. This is an append-only log of the real-world connections, family stories, and unexpected moments that make indie development meaningful. 
 
 
 ### October 2025 - A Small X Interaction That Made My Week
@@ -36,10 +35,4 @@ And another person jumped in:
 When I checked Mixpanel later, I saw multiple active sessions from different phones in Germany—it was her family actually playing together.
 
 **Outcome**: This interaction validated the power of authentic community engagement. A simple reply led to a family in Germany enjoying CalcQuest together, constructive feedback about onboarding, and organic word-of-mouth promotion. Little moments like this make indie building worth it.
-
----
-
-## How to Add New Entries
-
-When a significant moment occurs, add a new entry at the end of this document following the structure above. Date or time period should be as specific as appropriate while maintaining timelessness (avoid exact dates if not necessary).
 

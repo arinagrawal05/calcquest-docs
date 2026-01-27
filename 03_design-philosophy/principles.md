@@ -1,6 +1,5 @@
-# Design Principles
-
-This document outlines the core design principles guiding CalcQuest development.
+**Math as joy, not a chore.** 
+What happens when you treat arithmetic as a creative playground? These six core design principles guide every level, feature, and interaction within CalcQuest, ensuring an experience that respects the player’s intelligence and time. 
 
 ## Principle 1: Math as Puzzle, Not Drill
 

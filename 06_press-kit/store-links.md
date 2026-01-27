@@ -1,8 +1,7 @@
 # Store Links
 
-Official app store listings for CalcQuest.
-
-## Google Play Store (Android)
+**Click, download, play.** 
+CalcQuest is officially live and ready for download. Here are the direct paths to the Google Play Store and Apple App Store, along with professional badge assets for press use. 
 
 **URL**: https://play.google.com/store/apps/details?id=com.calcquest.calculatorgame
 

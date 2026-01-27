@@ -1,6 +1,7 @@
 # Comparisons
 
-This document positions CalcQuest relative to other mobile puzzle and math games. The goal is to clarify what CalcQuest offers and how it differs from alternatives.
+**Why CalcQuest stands alone.** 
+Arithmetic is often presented as a drill; we present it as a puzzle. Here is how CalcQuest compares to traditional math apps, brain trainers, and tile-merge games to show exactly why our approach is first-of-its-kind. 
 
 ## Category Positioning
 

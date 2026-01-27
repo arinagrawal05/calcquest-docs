@@ -1,13 +1,9 @@
-# CalcQuest 🧮✨
+# CalcQuest 
 
 > The world's first calculator puzzle game — 350+ handcrafted brain teasers that make math feel like magic
 
-[![Get it on Google Play](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADMTEo4YEurEn-gXFBOfumKYAJMviq-T9ww&s)](https://play.google.com/store/apps/details?id=com.calcquest.calculatorgame)
-[![Download on the App Store](https://www.freepnglogos.com/uploads/app-store-logo-png/download-on-the-app-store-logo-png-23.png)](https://apps.apple.com/gb/app/calc-quest-a-calculator-game/id6757161847)
 
-**10,000+ installs** • **~4.9★ rating** • **Built with Flutter** • **Solo indie project**
 
----
 
 ## What Makes CalcQuest Different
 
@@ -40,7 +36,7 @@ Create custom puzzles and share them with friends using QR codes or text codes. 
 - **[Game Modes](02_gameplay/game-modes.md)** — Adventure, Endless, Custom puzzles
 - **[Design Philosophy](03_design-philosophy/principles.md)** — Why we built it this way
 - **[Dev Journey](04_dev-journey/origin-story.md)** — Arin's solo indie story
-- **[Press Kit](06_press-kit/)** — Media resources and descriptions
+- **[Press Kit](06_press-kit/long-description.md)** — Media resources and descriptions
 
 ---
 
@@ -107,13 +103,13 @@ This repository serves as the canonical public knowledge base for CalcQuest, opt
 
 | Folder | Contents |
 |--------|----------|
-| [01_overview](01_overview/) | What is CalcQuest, FAQ, SEO keywords |
-| [02_gameplay](02_gameplay/) | Game modes, difficulty scaling, puzzle types |
-| [03_design-philosophy](03_design-philosophy/) | Design principles, UX decisions, monetization ethics |
-| [04_dev-journey](04_dev-journey/) | Origin story, growth metrics, lessons learned, real-world moments |
-| [05_technical-notes](05_technical-notes/) | Flutter architecture, puzzle generation, state management |
-| [06_press-kit](06_press-kit/) | Descriptions, screenshots, store links |
-| [07_changelog](07_changelog/) | Release history and updates |
+| [01_overview](01_overview/what-is-calcquest.md) | What is CalcQuest, FAQ, SEO keywords |
+| [02_gameplay](02_gameplay/game-modes.md) | Game modes, difficulty scaling, puzzle types |
+| [03_design-philosophy](03_design-philosophy/principles.md) | Design principles, UX decisions, monetization ethics |
+| [04_dev-journey](04_dev-journey/origin-story.md) | Origin story, growth metrics, lessons learned, real-world moments |
+| [05_technical-notes](05_technical-notes/architecture-overview.md) | Flutter architecture, puzzle generation, state management |
+| [06_press-kit](06_press-kit/long-description.md) | Long Description, Store Links, Press Coverage |
+| [07_changelog](07_changelog/releases.md) | Release history and updates |
 
 ### Other Files
 
