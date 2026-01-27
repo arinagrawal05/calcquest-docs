@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CalcQuest documentation - an indie mobile math puzzle game where players use a calculator to solve creative brain-teasing puzzles.">
+  <meta name="keywords" content="CalcQuest, calculator game, math puzzle, brain teaser, mobile game, Flutter game, indie game">
+  <meta name="author" content="Arin Agrawal">
+  <meta name="robots" content="index, follow">
+  <title>CalcQuest Documentation</title>
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="CalcQuest Documentation">
+  <meta property="og:description" content="Documentation for CalcQuest - an indie mobile math puzzle game.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arinagrawal05.github.io/calcquest-docs/">
+  
+  <!-- Docsify Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  
+  <style>
+    :root {
+      --base-font-size: 16px;
+      --theme-color: #42b983;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading...</div>
+  
+  <script>
+    window.$docsify = {
+      name: 'CalcQuest',
+      repo: 'https://github.com/arinagrawal05/calcquest-docs',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      search: 'auto',
+      routerMode: 'hash',
+      notFoundPage: true,
+      homepage: 'README.md',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      }
+    }
+  </script>
+  
+  <!-- Docsify Core -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  
+  <!-- Search Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>
