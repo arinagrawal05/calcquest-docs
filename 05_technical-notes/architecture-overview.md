@@ -1,0 +1,72 @@
+# Architecture Overview
+
+This document provides a high-level overview of CalcQuest's technical architecture.
+
+## Technology Stack
+
+- **Framework**: Flutter
+- **Language**: Dart
+- **Platforms**: Android, iOS
+- **Backend Services**: Firebase (for analytics, crash reporting, remote configuration)
+- **Authentication**: Google Sign-In, Sign in with Apple
+- **Leaderboards**: Google Play Games Services
+
+## Application Structure
+
+CalcQuest follows a layered architecture common in Flutter applications.
+
+### Presentation Layer
+
+Responsible for rendering the user interface and handling user input.
+
+- **Screens**: Top-level views representing major navigation destinations (dashboard, game screen, level editor, settings).
+- **Widgets**: Reusable UI components (buttons, calculator display, level selection tiles).
+- **Providers**: State management objects that connect business logic to the UI.
+
+### Business Logic Layer
+
+Contains the core game logic independent of the UI.
+
+- **Puzzle Engine**: Validates moves, checks win conditions, manages current game state.
+- **Level Management**: Loads, parses, and sequences levels from campaign data.
+- **Procedural Generation**: Creates puzzles for endless modes.
+- **Progression System**: Tracks player progress, XP, and unlocks.
+
+### Data Layer
+
+Handles persistence and external services.
+
+- **Local Storage**: Shared preferences for settings, local progress data.
+- **Cloud Sync**: Firebase integration for cross-device progress (when signed in).
+- **Remote Configuration**: Feature flags and content updates via Firebase Remote Config.
+
+## State Management
+
+CalcQuest uses Provider for state management, chosen for its simplicity and integration with Flutter's widget tree.
+
+Key state objects include:
+
+- **GameProvider**: Manages active puzzle state.
+- **DashboardProvider**: Handles dashboard data, XP, and level progress.
+- **AudioController**: Manages sound effects and music.
+
+## Navigation
+
+Navigation uses Flutter's Navigator with named routes. Deep links are supported for level sharing functionality.
+
+## Platform-Specific Considerations
+
+### Android
+
+- Uses Google Play Games Services for leaderboards and achievements.
+- AdMob integration for advertisements.
+
+### iOS
+
+- Uses Game Center where applicable.
+- Sign in with Apple for authentication.
+- App Tracking Transparency (ATT) for ad-related permissions.
+
+## Modularity
+
+The codebase is organized by feature rather than by layer, making it easier to locate related code. Each major feature (game, level editor, settings) has its own directory containing screens, widgets, and logic.
