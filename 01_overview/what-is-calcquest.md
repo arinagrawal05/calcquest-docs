@@ -1,5 +1,6 @@
-**What if your calculator was a playground?** 
-CalcQuest isn't a math drill app—it's a first-of-its-kind mobile puzzle game where your calculator becomes a tool for creative problem-solving. Developed solo by Arin Agrawal, it challenges you to reach target numbers through logic, planning, and arithmetic mastery.
+# What is CalcQuest?
+
+CalcQuest is an indie mobile math puzzle game developed by Arin Agrawal. The game presents players with a simulated calculator interface and challenges them to reach target numbers through creative use of arithmetic operations.
 
 ## Core Concept
 

@@ -46,14 +46,3 @@ From the first Android beta to the recent iOS launch and the introduction of the
 
 - "Play with friends" functionality is in development.
 - Details will be documented upon release.
-
----
-
-## How to Update This Document
-
-When a significant release occurs, add a new section with:
-
-1. A descriptive heading (e.g., "Feature Name Update").
-2. Bullet points summarizing what was added, changed, or fixed.
-
-Avoid including minor bug fixes or incremental changes unless they significantly impact user experience.
