@@ -1,35 +1,197 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CalcQuest documentation - an indie mobile math puzzle game where players use a calculator to solve creative brain-teasing puzzles.">
-  <meta name="keywords" content="CalcQuest, calculator game, math puzzle, brain teaser, mobile game, Flutter game, indie game">
+  <meta name="description"
+    content="CalcQuest documentation - an indie mobile math puzzle game where players use a calculator to solve creative brain-teasing puzzles.">
+  <meta name="keywords"
+    content="CalcQuest, calculator game, math puzzle, brain teaser, mobile game, Flutter game, indie game">
   <meta name="author" content="Arin Agrawal">
   <meta name="robots" content="index, follow">
   <title>CalcQuest Documentation</title>
-  
+
   <!-- Open Graph / Social -->
   <meta property="og:title" content="CalcQuest Documentation">
   <meta property="og:description" content="Documentation for CalcQuest - an indie mobile math puzzle game.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arinagrawal05.github.io/calcquest-docs/">
-  
+
   <!-- Docsify Theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css">
+
   <style>
     :root {
       --base-font-size: 16px;
       --theme-color: #42b983;
     }
+
+    /* Dark theme styles */
+    html[data-theme='dark'] {
+      --base-background-color: #1e1e1e;
+      --base-color: #e0e0e0;
+      --sidebar-background: #252525;
+      --sidebar-nav-link-color: #b0b0b0;
+      --sidebar-nav-link-color--active: #42b983;
+      --sidebar-nav-link-color--hover: #42b983;
+      --cover-background-color: #1e1e1e;
+      --search-background: #2d2d2d;
+      --search-input-color: #e0e0e0;
+      --code-inline-background: #2d2d2d;
+      --code-inline-color: #e06c75;
+      --blockquote-background-color: #2d2d2d;
+      --blockquote-color: #b0b0b0;
+    }
+
+    html[data-theme='dark'] body {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    html[data-theme='dark'] .sidebar {
+      background-color: #252525;
+      border-right: 1px solid #333;
+    }
+
+    html[data-theme='dark'] .sidebar-nav a {
+      color: #b0b0b0;
+    }
+
+    html[data-theme='dark'] .sidebar-nav a:hover,
+    html[data-theme='dark'] .sidebar-nav a.active {
+      color: #42b983;
+    }
+
+    html[data-theme='dark'] .markdown-section {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    html[data-theme='dark'] .markdown-section h1,
+    html[data-theme='dark'] .markdown-section h2,
+    html[data-theme='dark'] .markdown-section h3,
+    html[data-theme='dark'] .markdown-section h4 {
+      color: #ffffff;
+    }
+
+    html[data-theme='dark'] .markdown-section a {
+      color: #42b983;
+    }
+
+    html[data-theme='dark'] .markdown-section code {
+      background-color: #2d2d2d;
+      color: #e06c75;
+    }
+
+    html[data-theme='dark'] .markdown-section pre {
+      background-color: #2d2d2d;
+    }
+
+    html[data-theme='dark'] .markdown-section blockquote {
+      background-color: #2d2d2d;
+      border-left-color: #42b983;
+      color: #b0b0b0;
+    }
+
+    html[data-theme='dark'] .markdown-section table th,
+    html[data-theme='dark'] .markdown-section table td {
+      border-color: #444;
+    }
+
+    html[data-theme='dark'] .markdown-section table tr:nth-child(2n) {
+      background-color: #252525;
+    }
+
+    html[data-theme='dark'] .search input {
+      background-color: #2d2d2d;
+      color: #e0e0e0;
+      border-color: #444;
+    }
+
+    html[data-theme='dark'] .search .matching-post {
+      background-color: #2d2d2d;
+      border-color: #444;
+    }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      z-index: 100;
+      background: none;
+      border: 2px solid #42b983;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      background-color: #42b983;
+      color: white;
+    }
+
+    html[data-theme='dark'] .theme-toggle {
+      color: #e0e0e0;
+    }
+
+    html[data-theme='light'] .theme-toggle {
+      color: #333;
+    }
+
+    /* Store badges */
+    .store-badges {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .store-badges img {
+      height: 50px;
+      width: auto;
+    }
   </style>
 </head>
+
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+    <span id="theme-icon">☀️</span>
+  </button>
+
   <div id="app">Loading...</div>
-  
+
   <script>
+    // Initialize dark theme by default
+    (function () {
+      const savedTheme = localStorage.getItem('docsify-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateThemeIcon(savedTheme);
+    })();
+
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('docsify-theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      if (icon) {
+        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+      }
+    }
+
     window.$docsify = {
       name: 'CalcQuest',
       repo: 'https://github.com/arinagrawal05/calcquest-docs',
@@ -45,11 +207,15 @@
       }
     }
   </script>
-  
+
   <!-- Docsify Core -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  
+
   <!-- Search Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+
+  <!-- Twitter Widget for embedded tweets -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
+
 </html>
