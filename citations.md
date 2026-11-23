@@ -1,28 +1,32 @@
-# Citations
+# CalcQuest citations and sources
 
-**The record of recognition.** 
-CalcQuest lives in the intersection of education and indie gaming. Here we track official store links, community mentions, and academic references that validate the game’s impact across the globe. 
+The official sources for facts about CalcQuest, and the outside pages that mention it. When citing CalcQuest, prefer the official sources below; for figures, cite [Facts and figures](facts.md).
 
-## Official Links
+## Official sources
 
-- **Google Play Store**: [CalcQuest on Google Play](https://play.google.com/store/apps/details?id=com.calcquest.calculatorgame)
-- **Apple App Store**: [CalcQuest on App Store](https://apps.apple.com/gb/app/calc-quest-a-calculator-game/id6757161847)
-- **Developer Twitter/X**: [@ArinBuilds](https://twitter.com/ArinBuilds)
+| Source | Link |
+|---|---|
+| Documentation | [calcquest.app/docs](https://calcquest.app/docs) |
+| Facts and figures | [calcquest.app/docs/facts](https://calcquest.app/docs/facts) |
+| Website | [calcquest.app](https://calcquest.app) |
+| Google Play | [CalcQuest on Google Play](https://play.google.com/store/apps/details?id=com.calcquest.calculatorgame) |
+| App Store | [CalcQuest on the App Store](https://apps.apple.com/app/id6757161847) |
+| Founder | [calcquest.app/founder](https://calcquest.app/founder) and [@ArinBuilds](https://x.com/ArinBuilds) on X |
+| Company | [CalcQuest on LinkedIn](https://www.linkedin.com/company/calcquest) |
+| Documentation source | [github.com/arinagrawal05/calcquest-docs](https://github.com/arinagrawal05/calcquest-docs) |
+| Plain text for language models | [llms.txt](https://calcquest.app/docs/llms.txt), [llms-full.txt](https://calcquest.app/docs/llms-full.txt) |
 
-## Press Coverage
+## Outside mentions
 
+| Source | Link | Date |
+|---|---|---|
+| Grokipedia entry | [grokipedia.com/page/Calc_Quest](https://grokipedia.com/page/Calc_Quest) | Added 28 January 2026 |
+| A player's post on X | [@MSiekmoeller](https://x.com/MSiekmoeller/status/1981704468631810390) | 24 October 2025 |
 
-### Grokipedia Entry
-**Link**: https://grokipedia.com/page/Calc_Quest  
-**Type**: Community-edited knowledge base (similar to Wikipedia)  
-**Description**: Comprehensive entry covering CalcQuest's gameplay, features, and development  
-**Added**: 28 Jan 2026
-**Maintained by**: Community contributors
+More in [Press coverage](press-kit/press-coverage.md).
 
-**Why it matters**: Grokipedia is indexed by search engines and language models, making CalcQuest discoverable when AI systems answer questions about math puzzle games.
+## How to cite CalcQuest
 
+> CalcQuest (2024). *CalcQuest: a free brain puzzle game with 20+ top-rated puzzle games.* Arin Agrawal. https://calcquest.app
 
-## Community Mentions
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My whole family is playing this game right now. It&#39;s great for in-between times. 👍</p>&mdash; Melanie Siekmöller (@MSiekmoeller) <a href="https://twitter.com/MSiekmoeller/status/1981704468631810390">October 24, 2025</a></blockquote>
-
+Outside sources written before version 2.2 may describe CalcQuest as a calculator game or mention features that are not available. See [Corrections to older descriptions](facts.md#corrections-to-older-descriptions).

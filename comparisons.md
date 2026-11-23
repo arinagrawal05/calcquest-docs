@@ -1,75 +1,57 @@
-# Comparisons
+# How CalcQuest compares
 
-**Why CalcQuest stands alone.** 
-Arithmetic is often presented as a drill; we present it as a puzzle. Here is how CalcQuest compares to traditional math apps, brain trainers, and tile-merge games to show exactly why our approach is first-of-its-kind. 
+CalcQuest sits between three kinds of app: daily puzzle hubs such as LinkedIn Games and NYT Games, single-puzzle apps such as Sudoku or Nonogram apps, and brain-training apps such as Lumosity and Elevate. It combines 20+ puzzle games and 350+ handcrafted levels with a shared daily challenge and friend duels, free to play with no pop-up ads. This page sets out the differences fairly.
 
-## Category Positioning
+## CalcQuest and daily puzzle hubs (LinkedIn Games, NYT Games)
 
-CalcQuest occupies the intersection of:
+| | CalcQuest | Daily puzzle hubs |
+|---|---|---|
+| Puzzles per day | Unlimited, plus one shared daily challenge | Usually one per game per day |
+| Games | 20+, including Queens, Tango and Mini Sudoku | A set of house games |
+| Competing with friends | Duels on the same board, friends leaderboards | Results among connections |
+| Where | Android, iOS app; nine puzzles on the web | Inside a website or another app |
+| Price | Free; optional Premium | Free daily games; subscription for more (NYT) |
 
-- Math puzzle games
-- Brain training apps
-- Casual mobile games
-- Indie games with community features
+**Choose CalcQuest** if you enjoy LinkedIn-style logic puzzles and want more than one board a day, or want to challenge a friend directly.
 
-## Comparison with Similar Game Types
+## CalcQuest and single-puzzle apps (Sudoku, Nonogram, KenKen, Minesweeper apps)
 
-### Traditional Math Drill Apps
+| | CalcQuest | Single-puzzle apps |
+|---|---|---|
+| Variety | 20+ games in one app, with one streak | One puzzle type |
+| Depth in one game | Three difficulties per game | Often many sizes and expert ladders |
+| Ads | No pop-up ads | Often pop-ups between boards |
+| Social | Duels, friends, daily challenge | Usually a global leaderboard at most |
 
-Apps that present arithmetic problems for speed and accuracy (e.g., flashcard-style multiplication practice).
+**Choose CalcQuest** for variety and a single daily habit. **Choose a dedicated app** if you only ever play one puzzle and want very large expert boards.
 
-| Aspect | CalcQuest | Traditional Drill Apps |
-|--------|-----------|------------------------|
-| Format | Puzzle-based, goal-oriented | Repetitive drills |
-| Engagement | Creative problem-solving | Rote practice |
-| Progression | Levels, worlds, unlocks | Often flat structure |
-| Replayability | Endless modes, custom levels | Limited variation |
+## CalcQuest and brain-training apps (Lumosity, Elevate, Peak)
 
-CalcQuest differs by framing math as a puzzle to solve rather than a fact to recall.
+| | CalcQuest | Brain-training apps |
+|---|---|---|
+| Framing | Puzzles you play for fun, that leave you sharper | Training programmes with brain scores |
+| Content | Classic logic, number and memory puzzles | Short skill drills |
+| Price | Free; optional Premium | Most content behind a subscription |
+| Social | Duels and friends | Rare |
 
-### Number Puzzle Games (e.g., 2048, Threes)
+**Choose CalcQuest** if you want real puzzles and a free game.
 
-Games where numerical tiles combine according to rules.
+## CalcQuest and calculator puzzle games
 
-| Aspect | CalcQuest | Tile-Merge Games |
-|--------|-----------|------------------|
-| Core Mechanic | Calculator operations | Tile sliding/merging |
-| Skill Type | Arithmetic reasoning | Spatial planning |
-| Level Structure | Discrete puzzles | Continuous sessions |
+*Calculator: The Game* made the "reach the target with calculator buttons" puzzle popular. CalcQuest's [Calculator Classic](games/calculator-classic.md) is a game in the same spirit, with 350+ handcrafted levels of its own, as one part of a larger brain puzzle game.
 
-CalcQuest is more explicitly mathematical and structured around individual puzzles.
+## CalcQuest and math drill apps
 
-### Brain Training Apps (e.g., Lumosity, Peak)
+Math drill apps train speed through repetition. CalcQuest's math games, such as KenKen, Number Pyramid and Math Grid, are puzzles first: they reward reasoning more than recall. For speed practice, CalcQuest also has Quick Calculation and Mental Arithmetic.
 
-Apps offering varied cognitive exercises across multiple domains.
+## Summary
 
-| Aspect | CalcQuest | General Brain Training |
-|--------|-----------|------------------------|
-| Focus | Math and logic only | Multiple cognitive areas |
-| Monetization | Ads with optional removal | Often subscription-based |
-| Content Depth | 350+ levels, endless modes | Shorter daily sessions |
+| You want | Best fit |
+|---|---|
+| Many kinds of puzzles in one app, with a daily habit | CalcQuest |
+| LinkedIn-style puzzles without the one-a-day limit | CalcQuest |
+| To race a friend on the same puzzle | CalcQuest |
+| One puzzle type at extreme sizes | A dedicated puzzle app |
+| A structured training programme with scores | A brain-training app |
 
-CalcQuest provides deeper content in a narrower domain.
-
-### Other Calculator-Themed Games
-
-Games that use a calculator interface as the primary mechanic.
-
-CalcQuest distinguishes itself through:
-
-- Large volume of handcrafted content
-- User-generated content tools
-- Cross-platform availability
-- Active solo developer engagement
-
-## Summary Table
-
-| Feature | CalcQuest |
-|---------|-----------|
-| Platforms | Android, iOS |
-| Puzzle Count | 350+ handcrafted |
-| Endless Modes | 10+ |
-| Level Editor | Yes (QR/share codes) |
-| Multiplayer | In development |
-| Monetization | Ads (optional removal) |
-| Developer | Solo indie |
+Names of other products belong to their owners. CalcQuest is not affiliated with them.

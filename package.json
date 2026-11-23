@@ -1,0 +1,14 @@
+{
+  "name": "calcquest-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build && node scripts/build-llms-full.mjs && node scripts/check-content.mjs",
+    "preview": "vitepress preview",
+    "deploy": "vercel build --prod && vercel deploy --prebuilt --prod --yes"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.3"
+  }
+}

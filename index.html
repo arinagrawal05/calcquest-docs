@@ -1,238 +1,33 @@
-<!-- index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="CalcQuest documentation - an indie mobile math puzzle game where players use a calculator to solve creative brain-teasing puzzles.">
-  <meta name="keywords"
-    content="CalcQuest, calculator game, math puzzle, brain teaser, mobile game, Flutter game, indie game">
-  <meta name="author" content="Arin Agrawal">
-  <meta name="robots" content="index, follow">
-  <title>CalcQuest Documentation</title>
-
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="CalcQuest Documentation">
-  <meta property="og:description" content="Documentation for CalcQuest - an indie mobile math puzzle game.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://arinagrawal05.github.io/calcquest-docs/">
-
-  <!-- Docsify Theme - Vue (Layout) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-
-  <style>
-    :root {
-      --base-font-size: 16px;
-      --theme-color: #42b983;
-    }
-
-    /* Permanent Dark Theme Styles */
-    body {
-      background-color: #1e1e1e !important;
-      color: #e0e0e0 !important;
-    }
-
-    /* Sidebar */
-    .sidebar {
-      background-color: #252525 !important;
-      border-right: 1px solid #333 !important;
-    }
-
-    .sidebar-nav a {
-      color: #b0b0b0 !important;
-    }
-
-    .sidebar-nav a:hover,
-    .sidebar-nav a.active {
-      color: #42b983 !important;
-    }
-
-    /* Main Content */
-    .markdown-section {
-      background-color: #1e1e1e !important;
-      color: #e0e0e0 !important;
-    }
-
-    .markdown-section h1,
-    .markdown-section h2,
-    .markdown-section h3,
-    .markdown-section h4,
-    .markdown-section h5,
-    .markdown-section h6 {
-      color: #ffffff !important;
-    }
-
-    .markdown-section a {
-      color: #42b983 !important;
-      text-decoration: none;
-    }
-
-    .markdown-section a:hover {
-      text-decoration: underline;
-    }
-
-    /* Code Blocks */
-    .markdown-section code {
-      background-color: #2d2d2d !important;
-      color: #e06c75 !important;
-    }
-
-    .markdown-section pre {
-      background-color: #2d2d2d !important;
-    }
-
-    .markdown-section pre code {
-      color: #abb2bf !important;
-    }
-
-    /* Blockquotes */
-    .markdown-section blockquote {
-      background-color: #2d2d2d !important;
-      border-left: 4px solid #42b983 !important;
-      color: #b0b0b0 !important;
-      padding: 10px 15px;
-      margin: 1em 0;
-    }
-
-    /* Tables */
-    .markdown-section table th,
-    .markdown-section table td {
-      border-color: #444 !important;
-      background-color: transparent !important;
-    }
-
-    .markdown-section table th {
-      background-color: #2d2d2d !important;
-    }
-
-    .markdown-section table tr:nth-child(2n) {
-      background-color: #252525 !important;
-    }
-
-    /* Search Input */
-    .search input {
-      background-color: #2d2d2d !important;
-      color: #e0e0e0 !important;
-      border-color: #444 !important;
-    }
-
-    .search .matching-post {
-      background-color: #2d2d2d !important;
-      border-color: #444 !important;
-    }
-
-    .search .search-keyword {
-      color: #e06c75 !important;
-    }
-
-    /* App Nav */
-    .app-nav {
-      background-color: #1e1e1e !important;
-    }
-
-    /* GitHub Corner */
-    .github-corner svg {
-      fill: #42b983 !important;
-      color: #1e1e1e !important;
-    }
-
-    /* Scrollbars */
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #1e1e1e;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #444;
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-
-    /* Store Badges */
-    .store-badges {
-      display: flex;
-      gap: 15px;
-      margin: 20px 0;
-      flex-wrap: wrap;
-    }
-
-    .store-badges img {
-      height: 50px;
-      width: auto;
-    }
-
-    /* Twitter Embeds */
-    .twitter-tweet {
-      margin: 1em 0 !important;
-    }
-
-    /* Misc */
-    .markdown-section strong {
-      color: #ffffff !important;
-      font-weight: 600;
-    }
-
-    .markdown-section hr {
-      border-color: #444 !important;
-    }
-
-    /* Fix menu icon in mobile view */
-    .sidebar-toggle {
-      background-color: #252525 !important;
-    }
-
-    .sidebar-toggle span {
-      background-color: #e0e0e0 !important;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="app">Loading...</div>
-
+  <meta charset="utf-8">
+  <!-- The CalcQuest docs moved to https://calcquest.app/docs. This page is what the
+       old GitHub Pages site (arinagr.me/calcquest-docs) serves; it sends every old
+       link, including docsify #/ links, to the matching new page. -->
+  <title>CalcQuest Docs have moved to calcquest.app/docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The CalcQuest documentation now lives at calcquest.app/docs.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://calcquest.app/docs">
   <script>
-    window.$docsify = {
-      name: 'CalcQuest',
-      repo: 'https://github.com/arinagrawal05/calcquest-docs',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      auto2top: true,
-      search: 'auto',
-      routerMode: 'hash',
-      notFoundPage: true,
-      homepage: 'README.md',
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      plugins: [
-        function (hook, vm) {
-          hook.doneEach(function () {
-            if (window.twttr && window.twttr.widgets) {
-              window.twttr.widgets.load();
-            }
-          });
-        }
-      ]
-    }
+    (function () {
+      var base = 'https://calcquest.app/docs/';
+      var h = location.hash;
+      var t = '';
+      if (h.indexOf('#/') === 0) {
+        var p = h.slice(2).split('?')[0].replace(/\.md$/, '').replace(/^\/+|\/+$/g, '');
+        var m = { '01_overview/keywords': 'who-is-it-for', 'use-cases': 'who-is-it-for',
+                  '02_gameplay/puzzle-types': 'games/', '02_gameplay/difficulty-scaling': 'gameplay/difficulty', 'README': '' };
+        t = (p in m) ? m[p] : p.replace(/^0\d_/, '');
+      }
+      location.replace(base + t);
+    })();
   </script>
-
-  <!-- Docsify Core -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-
-  <!-- Search Plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-
-  <!-- Twitter Widget for embedded tweets -->
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <meta http-equiv="refresh" content="0; url=https://calcquest.app/docs">
+  <style>body{font-family:system-ui,sans-serif;background:#fff;color:#1E1B18;margin:0;padding:48px 16px;text-align:center}a{color:#1E1B18}</style>
+</head>
+<body>
+  <p>The CalcQuest documentation has moved to <a href="https://calcquest.app/docs">calcquest.app/docs</a>.</p>
 </body>
-
 </html>

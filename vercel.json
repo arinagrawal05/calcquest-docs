@@ -1,0 +1,20 @@
+{
+  "framework": "vitepress",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".vitepress/dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/", "destination": "https://calcquest.app/docs", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/docs/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/docs/llms(.*).txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    }
+  ]
+}
