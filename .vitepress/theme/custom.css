@@ -1,0 +1,532 @@
+/* CalcQuest docs theme: matches calcquest.app (calcquest_web/styles/globals.css).
+   The website is light-only, so the docs are too (appearance: false). */
+
+:root {
+  /* CalcQuest tokens, same names and values as the website */
+  --cq-bg: #F3EDE0;
+  --cq-card: #FBF6EA;
+  --cq-ink: #1E1B18;
+  --cq-ink2: #5C5446;
+  --cq-ink3: #8A8070;
+  --cq-line: #D8CFBE;
+  --cq-track: #EAE3D5;
+  --cq-ac: #E0A255;
+  --cq-ac-hover: #E8B26F;
+  --cq-ac-soft: #FBEBC4;
+  --cq-ok: #1F6B45;
+  --cq-ok-soft: #DCEBDD;
+  --cq-err: #B3261E;
+  --cq-err-soft: #F8DAD5;
+  --cq-blue: #C6E1F6;
+
+  /* VitePress mapping */
+  --vp-font-family-base: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-heading: 'DM Serif Display', Georgia, serif;
+
+  --vp-c-bg: var(--cq-bg);
+  --vp-c-bg-alt: var(--cq-bg);
+  --vp-c-bg-elv: var(--cq-card);
+  --vp-c-bg-soft: var(--cq-track);
+
+  --vp-c-text-1: var(--cq-ink);
+  --vp-c-text-2: var(--cq-ink2);
+  --vp-c-text-3: var(--cq-ink3);
+
+  --vp-c-divider: var(--cq-line);
+  --vp-c-border: var(--cq-line);
+  --vp-c-gutter: var(--cq-line);
+
+  --vp-c-brand-1: var(--cq-ink);
+  --vp-c-brand-2: #3F392F;
+  --vp-c-brand-3: var(--cq-ac);
+  --vp-c-brand-soft: var(--cq-ac-soft);
+
+  --vp-c-default-1: var(--cq-ink2);
+  --vp-c-default-soft: var(--cq-track);
+
+  --vp-c-tip-1: var(--cq-ok);
+  --vp-c-tip-soft: var(--cq-ok-soft);
+  --vp-c-danger-1: var(--cq-err);
+  --vp-c-danger-soft: var(--cq-err-soft);
+
+  --vp-code-color: var(--cq-ink);
+  --vp-code-bg: var(--cq-track);
+  --vp-code-block-bg: var(--cq-card);
+
+  --vp-nav-height: 92px;
+  --vp-nav-bg-color: transparent;
+  --vp-nav-screen-bg-color: var(--cq-bg);
+  --vp-sidebar-bg-color: var(--cq-bg);
+  --vp-local-nav-bg-color: var(--cq-bg);
+  --vp-local-search-bg: var(--cq-bg);
+  --vp-local-search-result-bg: var(--cq-card);
+  --vp-local-search-result-border: var(--cq-line);
+  --vp-local-search-highlight-bg: var(--cq-ac);
+  --vp-local-search-highlight-text: var(--cq-ink);
+
+  --cq-lip: 0 4px 0 0 var(--cq-ink);
+}
+
+body {
+  background: var(--cq-bg);
+  color: var(--cq-ink);
+}
+
+/* ---------- Navbar: the website's floating card with an ink lip ---------- */
+
+.VPNav {
+  background: var(--cq-bg) !important;
+}
+
+.VPNavBar,
+.VPNavBar.has-sidebar,
+.VPNavBar:not(.home) {
+  background: transparent !important;
+}
+
+.VPNavBar .divider {
+  display: none !important;
+}
+
+.VPNavBar .wrapper {
+  padding: 14px 16px 10px !important;
+}
+
+.VPNavBar > .wrapper > .container {
+  max-width: 1376px !important;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+  background: var(--cq-card);
+  border: 2px solid var(--cq-ink);
+  border-radius: 24px;
+  box-shadow: var(--cq-lip);
+}
+
+/* With a sidebar, VitePress pins the title over the sidebar column. Keep it in the card. */
+.VPNavBar.has-sidebar .container > .title,
+.VPNavBar .container > .title {
+  position: relative !important;
+  width: auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.VPNavBar .container > .content,
+.VPNavBar.has-sidebar .container > .content {
+  flex-grow: 1;
+  padding: 0 !important;
+}
+
+.VPNavBar .content-body,
+.VPNavBar.has-sidebar .content-body {
+  background: transparent !important;
+  justify-content: flex-end;
+}
+
+.VPNavBar .title .VPNavBarTitle .title,
+.VPNavBarTitle .title {
+  border: 0 !important;
+  height: 60px;
+  gap: 12px;
+}
+
+.VPNavBarTitle .logo {
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--cq-ink);
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 0 !important;
+  transition: transform 0.15s;
+}
+
+.VPNavBarTitle .title:hover .logo {
+  transform: scale(1.05);
+}
+
+.VPNavBarTitle .title span {
+  font-family: var(--vp-font-family-heading);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--cq-ink);
+}
+
+.VPNavBarMenuLink,
+.VPNavBarMenuGroup .button {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: var(--cq-ink2) !important;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  color: var(--cq-ink) !important;
+}
+
+/* "Get the app": the website's primary button */
+.VPNavBarMenuLink[href="https://calcquest.app/play"] {
+  margin-left: 10px;
+  padding: 0 16px !important;
+  line-height: 34px !important;
+  background: var(--cq-ac);
+  color: var(--cq-ink) !important;
+  border: 2px solid var(--cq-ink);
+  border-radius: 16px;
+  box-shadow: var(--cq-lip);
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.VPNavBarMenuLink[href="https://calcquest.app/play"]:hover {
+  background: var(--cq-ac-hover);
+}
+
+.VPNavBarMenuLink[href="https://calcquest.app/play"]:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.VPNavBarSearch .DocSearch-Button,
+.VPNavBarSearch #local-search > button {
+  background: var(--cq-bg) !important;
+  border: 2px solid var(--cq-line) !important;
+  border-radius: 14px !important;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+  border-color: var(--cq-ink) !important;
+}
+
+.VPNavBarExtra .button,
+.VPNavBarHamburger {
+  color: var(--cq-ink);
+}
+
+.VPNavScreen {
+  top: var(--vp-nav-height) !important;
+}
+
+/* ---------- Sidebar ---------- */
+
+@media (min-width: 960px) {
+  .VPSidebar {
+    background: transparent !important;
+    padding-top: 12px !important;
+  }
+}
+
+.VPSidebar .group + .group {
+  border-top: 1px solid var(--cq-line) !important;
+}
+
+.VPSidebarItem.level-0 > .item .text {
+  font-weight: 700 !important;
+  color: var(--cq-ink) !important;
+}
+
+.VPSidebarItem .link .text {
+  color: var(--cq-ink2);
+  font-weight: 500;
+}
+
+.VPSidebarItem .link:hover .text {
+  color: var(--cq-ink);
+}
+
+.VPSidebarItem.is-active > .item .link .text {
+  color: var(--cq-ink) !important;
+  font-weight: 700;
+}
+
+.VPSidebarItem.is-active > .item .indicator {
+  background: var(--cq-ac) !important;
+  width: 3px;
+  border-radius: 2px;
+}
+
+.VPLocalNav {
+  background: var(--cq-bg) !important;
+  border-bottom: 1px solid var(--cq-line) !important;
+}
+
+/* ---------- Page content ---------- */
+
+.vp-doc h1,
+.vp-doc h2 {
+  font-family: var(--vp-font-family-heading);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--cq-ink);
+}
+
+.vp-doc h1 {
+  font-size: 44px;
+  line-height: 1.12;
+}
+
+.vp-doc h2 {
+  font-size: 30px;
+  line-height: 1.25;
+  border-top: 1px solid var(--cq-line);
+}
+
+.vp-doc h3 {
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--cq-ink);
+}
+
+.vp-doc p,
+.vp-doc li {
+  color: var(--cq-ink);
+  line-height: 1.75;
+}
+
+.vp-doc strong {
+  font-weight: 700;
+}
+
+/* Links: ink text with an amber underline, as on the website */
+.vp-doc a {
+  color: var(--cq-ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--cq-ac);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s, background 0.15s;
+}
+
+.vp-doc a:hover {
+  text-decoration-color: var(--cq-ink);
+  background: var(--cq-ac-soft);
+}
+
+.vp-doc .header-anchor {
+  text-decoration: none;
+  color: var(--cq-ac);
+  background: none;
+}
+
+/* Tables become cq-cards */
+.vp-doc table {
+  border: 1.5px solid var(--cq-line);
+  border-radius: 20px;
+  background: var(--cq-card);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.vp-doc th,
+.vp-doc td {
+  border: 0;
+  border-top: 1px solid var(--cq-line);
+  padding: 10px 16px;
+}
+
+.vp-doc tr:first-child th {
+  border-top: 0;
+}
+
+.vp-doc th {
+  background: var(--cq-track);
+  color: var(--cq-ink);
+  font-weight: 700;
+}
+
+.vp-doc tr,
+.vp-doc tr:nth-child(2n) {
+  background: transparent;
+}
+
+/* Blockquotes: soft amber card */
+.vp-doc blockquote {
+  border-left: 4px solid var(--cq-ac);
+  background: var(--cq-ac-soft);
+  border-radius: 0 16px 16px 0;
+  padding: 12px 18px;
+}
+
+.vp-doc blockquote > p {
+  color: var(--cq-ink);
+}
+
+.vp-doc :not(pre) > code {
+  background: var(--cq-track);
+  color: var(--cq-ink);
+  border-radius: 6px;
+}
+
+.vp-doc div[class*='language-'] {
+  background: var(--cq-card) !important;
+  border: 1.5px solid var(--cq-line);
+  border-radius: 16px !important;
+}
+
+.vp-doc hr {
+  border-top: 1px solid var(--cq-line);
+}
+
+/* ---------- Page footer: prev/next as website buttons ---------- */
+
+.VPDocFooter .pager-link {
+  background: var(--cq-card);
+  border: 2px solid var(--cq-ink) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--cq-lip);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.VPDocFooter .pager-link:hover {
+  background: var(--cq-ac-soft);
+}
+
+.VPDocFooter .pager-link:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.VPDocFooter .pager-link .desc {
+  color: var(--cq-ink2) !important;
+}
+
+.VPDocFooter .pager-link .title {
+  color: var(--cq-ink) !important;
+  font-weight: 700;
+}
+
+.VPDocFooter .edit-link-button,
+.VPLastUpdated {
+  color: var(--cq-ink2) !important;
+}
+
+/* On-this-page outline */
+.VPDocAsideOutline .outline-link {
+  color: var(--cq-ink2);
+}
+
+.VPDocAsideOutline .outline-link:hover,
+.VPDocAsideOutline .outline-link.active {
+  color: var(--cq-ink) !important;
+  font-weight: 600;
+}
+
+.VPDocAsideOutline .outline-marker {
+  background-color: var(--cq-ac) !important;
+}
+
+/* Site footer: the website's soft amber band */
+.VPFooter {
+  background: var(--cq-ac-soft) !important;
+  border-top: 0 !important;
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  color: var(--cq-ink2) !important;
+}
+
+/* Search dialog */
+.VPLocalSearchBox .shell {
+  background: var(--cq-bg) !important;
+  border: 2px solid var(--cq-ink);
+  border-radius: 20px !important;
+  box-shadow: var(--cq-lip);
+}
+
+.VPLocalSearchBox .search-bar {
+  background: var(--cq-card) !important;
+  border: 2px solid var(--cq-line) !important;
+  border-radius: 14px !important;
+}
+
+::selection {
+  background: var(--cq-ac-soft);
+}
+
+@media (max-width: 767px) {
+  .vp-doc h1 {
+    font-size: 34px;
+  }
+
+  .vp-doc h2 {
+    font-size: 26px;
+  }
+
+  .VPNavBarTitle .title span {
+    font-size: 17px;
+  }
+}
+
+/* ---------- Fixes: nav items sized to the 60px card, not the full nav height ---------- */
+
+.VPNavBar .content-body,
+.VPNavBar .container > .title,
+.VPNavBarTitle .title {
+  height: 60px !important;
+}
+
+.VPNavBar .content-body {
+  align-items: center;
+}
+
+.VPNavBarMenu,
+.VPNavBarMenuGroup,
+.VPNavBarSearch,
+.VPNavBarSocialLinks,
+.VPNavBarExtra,
+.VPNavBarHamburger {
+  height: 60px !important;
+  align-items: center;
+}
+
+.VPNavBarMenuLink {
+  line-height: 60px !important;
+}
+
+.VPNavBarMenuLink[href="https://calcquest.app/play"] {
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  line-height: 1 !important;
+}
+
+.VPNavBar .content-body .VPNavBarAppearance + .VPNavBarSocialLinks::before,
+.VPNavBarMenu + .VPNavBarTranslations::before,
+.VPNavBarMenu + .VPNavBarAppearance::before,
+.VPNavBarMenu + .VPNavBarSocialLinks::before,
+.VPNavBarTranslations + .VPNavBarAppearance::before {
+  background-color: var(--cq-line) !important;
+}
+
+/* Hide the "external" arrow on the nav button and nav links: the website shows none. */
+.VPNavBarMenuLink .vpi-arrow-top-right,
+.VPNavBarMenuLink::after {
+  display: none !important;
+}
+
+/* Full-width tables on wider screens; scroll sideways on phones. */
+@media (min-width: 768px) {
+  .vp-doc table {
+    display: table;
+    width: 100%;
+  }
+}
+
+/* Mobile menu button: a normal square tap target, not the 60px nav height. */
+.VPNavBarHamburger {
+  height: 44px !important;
+  width: 44px !important;
+  align-self: center;
+}
+
+/* Tables written with an empty header row (| | |) show no header bar. */
+.vp-doc thead:not(:has(th:not(:empty))) {
+  display: none;
+}
+
+.vp-doc table:has(thead:not(:has(th:not(:empty)))) tbody tr:first-child td {
+  border-top: 0;
+}

@@ -176,7 +176,8 @@ export default defineConfig({
   outDir: '.vitepress/dist/docs',
   cleanUrls: true,
   lastUpdated: true,
-  appearance: true,
+  // calcquest.app is light-only; the docs match it.
+  appearance: false,
   rewrites: { 'README.md': 'index.md' },
   srcExclude: ['CONTRIBUTING.md', 'node_modules/**', 'scripts/**'],
   sitemap: {
@@ -188,7 +189,11 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: `${SITE}/favicon.png` }],
-    ['meta', { name: 'theme-color', content: '#FACC15' }],
+    ['meta', { name: 'theme-color', content: '#F3EDE0' }],
+    // Same fonts as calcquest.app: Poppins (text), DM Serif Display (headings).
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Serif+Display&display=swap' }],
     ['meta', { name: 'author', content: 'Arin Agrawal' }],
     ['meta', { property: 'og:site_name', content: 'CalcQuest Docs' }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -277,7 +282,8 @@ export default defineConfig({
       { text: 'Games', link: '/games/' },
       { text: 'Premium', link: '/premium' },
       { text: 'FAQ', link: '/overview/faq' },
-      { text: 'calcquest.app', link: SITE },
+      { text: 'Play free', link: `${SITE}/puzzles` },
+      { text: 'Get the app', link: `${SITE}/play` },
     ],
     search: { provider: 'local' },
     socialLinks: [

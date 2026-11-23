@@ -37,8 +37,9 @@ These docs are the public, canonical description of CalcQuest. They are written 
 | `press-kit/`, `changelog/`, `glossary.md`, `comparisons.md`, `citations.md` | Reference |
 | `public/` | Files served as they are: `llms.txt`, `robots.txt` |
 | `.vitepress/config.mts` | Site config: navigation, SEO tags, structured data, old-URL redirects |
+| `.vitepress/theme/` | The look: VitePress's default theme restyled to match calcquest.app. Colours and fonts mirror `calcquest_web/styles/globals.css`; change both together. Light mode only, like the website |
 | `scripts/` | `build-llms-full.mjs` (writes `llms-full.txt`), `check-content.mjs` (fails the build on emoji, banned claims or broken links) |
-| `index.html`, `.nojekyll` | Redirect from the old GitHub Pages site to calcquest.app/docs |
+| `index.html`, `.nojekyll` | A redirect to calcquest.app/docs for anyone landing on the old GitHub Pages address |
 
 ## Building and publishing
 

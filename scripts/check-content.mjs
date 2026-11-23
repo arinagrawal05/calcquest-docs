@@ -5,7 +5,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const skip = new Set(['node_modules', '.vitepress', '.git', 'public', 'scripts'])
+const skip = new Set(['node_modules', '.vitepress', '.vercel', '.git', 'public', 'scripts'])
 
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
