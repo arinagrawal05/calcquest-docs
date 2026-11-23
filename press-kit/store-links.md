@@ -27,7 +27,3 @@ The package name `com.calcquest.calculatorgame` dates from CalcQuest's start as 
 |---|---|
 | X (Twitter) | [@ArinBuilds](https://x.com/ArinBuilds) |
 | LinkedIn | [linkedin.com/company/calcquest](https://www.linkedin.com/company/calcquest) |
-
-## Badges
-
-Use the official badges from [Google Play](https://play.google.com/intl/en_us/badges/) and [Apple](https://developer.apple.com/app-store/marketing/guidelines/), linked to the URLs above.

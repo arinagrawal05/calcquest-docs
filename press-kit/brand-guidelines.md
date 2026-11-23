@@ -35,10 +35,6 @@ Do not describe CalcQuest as "the world's first" anything, and do not mention sh
 - Do not stretch, crop, recolour, rotate or add effects to it.
 - Give the logo room; do not crowd it with other marks or text.
 
-## Store names and badges
-
-Use the official "Get it on Google Play" and "Download on the App Store" badges from Google and Apple, linked to the [store links](store-links.md).
-
 ## Writing style
 
 - Plain, warm and direct. Short sentences.
