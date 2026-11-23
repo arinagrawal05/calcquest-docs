@@ -1,0 +1,7 @@
+# CalcQuest documentation, served at https://calcquest.app/docs
+# Search engines and AI crawlers are welcome.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://calcquest.app/docs/sitemap.xml

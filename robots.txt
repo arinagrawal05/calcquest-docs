@@ -1,6 +1,0 @@
-# robots.txt for CalcQuest Documentation
-
-User-agent: *
-Allow: /
-
-Sitemap: https://arinagrawal05.github.io/calcquest-docs/sitemap.xml

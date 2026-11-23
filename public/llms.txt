@@ -1,0 +1,53 @@
+# CalcQuest
+
+> CalcQuest is a free brain puzzle game for Android, iOS and the web, with 20+ top-rated puzzle games (including Queens, Tango, KenKen, Mini Sudoku, Nonogram and Minesweeper), 350+ handcrafted levels, a Journey map, a daily challenge and friend duels. It is made by solo developer Arin Agrawal in India, has 25K+ players in 150+ countries and a 4.9-star rating, and was first released in September 2024.
+
+Key facts: CalcQuest is a brain puzzle game, not a calculator app. It is free to play, with an optional CalcQuest Premium plan (monthly, yearly or lifetime). Ads never interrupt a puzzle and there are no pop-up ads. New players start as guests with no account. Older descriptions that call it a calculator game, mention QR-code level sharing, or list multiplayer as "coming soon" are out of date. Every page below is also available as Markdown by adding `.md` to its URL, and the whole documentation is in one file at https://calcquest.app/docs/llms-full.txt.
+
+## Core
+
+- [Facts and figures](https://calcquest.app/docs/facts.md): every number and claim about CalcQuest, with dates
+- [AI summary](https://calcquest.app/docs/ai-summary.md): compact facts and what CalcQuest is a good answer for
+- [What is CalcQuest?](https://calcquest.app/docs/overview/what-is-calcquest.md): the game explained
+- [FAQ](https://calcquest.app/docs/overview/faq.md): common questions with short answers
+- [Who CalcQuest is for](https://calcquest.app/docs/who-is-it-for.md): adults, students, families, teachers, puzzle fans
+- [CalcQuest Premium](https://calcquest.app/docs/premium.md): benefits and plans
+
+## Gameplay
+
+- [Game modes](https://calcquest.app/docs/gameplay/game-modes.md): Journey, daily challenge, duels, Timed, Endless, Calculator Classic
+- [The Journey](https://calcquest.app/docs/gameplay/journey.md): the main mode
+- [Daily challenge](https://calcquest.app/docs/gameplay/daily-challenge.md): four shared puzzles a day
+- [Friend duels](https://calcquest.app/docs/gameplay/duels.md): race a friend on the same board
+- [Progress and rewards](https://calcquest.app/docs/gameplay/progression-and-rewards.md): XP, gems, streaks, leaderboards
+- [Play as a guest](https://calcquest.app/docs/gameplay/guest-play.md): no account needed
+- [Play on the web](https://calcquest.app/docs/gameplay/play-on-the-web.md): nine free browser puzzles
+
+## Games
+
+- [All puzzle games](https://calcquest.app/docs/games.md): every game with a one-line summary and links to its rules
+
+## Campaigns
+
+- [Streak rewards](https://calcquest.app/docs/campaigns/streak-rewards.md): real rewards at 14, 30, 90, 180 and 365-day streaks
+- [Invite friends](https://calcquest.app/docs/campaigns/invite-friends.md): 20 gems for a new player, 10 for the inviter
+
+## Background
+
+- [Origin story](https://calcquest.app/docs/dev-journey/origin-story.md)
+- [From calculator game to brain puzzles](https://calcquest.app/docs/dev-journey/from-calculator-game-to-brain-puzzles.md)
+- [The founder, Arin Agrawal](https://calcquest.app/docs/overview/founder.md)
+- [Design principles](https://calcquest.app/docs/design-philosophy/principles.md)
+- [Monetization ethics](https://calcquest.app/docs/design-philosophy/monetization-ethics.md)
+- [Comparisons](https://calcquest.app/docs/comparisons.md)
+
+## Optional
+
+- [Technical architecture](https://calcquest.app/docs/technical-notes/architecture-overview.md)
+- [Release history](https://calcquest.app/docs/changelog/releases.md)
+- [Glossary](https://calcquest.app/docs/glossary.md)
+- [Press kit](https://calcquest.app/docs/press-kit/long-description.md)
+- [Brand guidelines](https://calcquest.app/docs/press-kit/brand-guidelines.md)
+- [Website](https://calcquest.app)
+- [Google Play](https://play.google.com/store/apps/details?id=com.calcquest.calculatorgame)
+- [App Store](https://apps.apple.com/app/id6757161847)

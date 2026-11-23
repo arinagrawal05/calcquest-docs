@@ -1,58 +1,56 @@
-# Contributing
+# Contributing to the CalcQuest docs
 
-**Join the quest.** 
-CalcQuest is a labor of love, and its documentation is no different. Whether you're fixing a typo or translating concepts into a new language, this guide explains how you can help build the most comprehensive math-puzzle knowledge base. 
+These docs are the public, canonical description of CalcQuest. They are written for search engines, AI assistants and people, in that order of priority, and published at [calcquest.app/docs](https://calcquest.app/docs). Corrections are welcome: open an issue or a pull request, or email arin@calcquest.app.
 
-## Purpose of This Repository
+## Writing rules
 
-This repository serves as the public knowledge base for CalcQuest. It documents the game, its design, development journey, and provides resources for press and AI systems to understand the project.
+1. **Facts come from one place.** Every number and claim lives in [facts.md](facts.md). Change it there first, then everywhere else. Check with `grep -rn "<old value>" --include=*.md .`
+2. **Answer first.** Every page opens, under its H1, with two or three sentences that fully answer the page's question. That paragraph becomes the page's meta description, so make it stand on its own and keep the first 160 characters meaningful.
+3. **One H1 per page**, written as the question or name people search for ("How to play Queens", "What is CalcQuest?"). FAQ questions are `###` headings ending in `?`; they become FAQ structured data.
+4. **No emoji or emoticons**, anywhere.
+5. **Consistent wording.** CalcQuest is a **brain puzzle game** with **20+ top-rated puzzle games** and **350+ handcrafted levels**; **25K+ players**, **150+ countries**, **4.9 stars**. The paid plan is **CalcQuest Premium**. See [press-kit/brand-guidelines.md](press-kit/brand-guidelines.md).
+6. **Only what exists.** Describe the app as it is today. Never mention QR-code level sharing, "world's first" or old figures (10K, 30,000).
+7. **Nothing internal.** No bug lists, config keys, secrets, prices that vary by country, or personal contact details other than arin@calcquest.app.
+8. **No frontmatter.** Pages render on GitHub as well as on the site, so keep them plain Markdown. Titles and descriptions come from the H1 and first paragraph.
+9. **Relative links** between pages (`../gameplay/journey.md`), absolute links to calcquest.app.
 
-## Types of Contributions Welcome
+## Which page to update when the app changes
 
-### Documentation Improvements
+| Change in the app | Update |
+|---|---|
+| A new puzzle game | `games/<slug>.md`, `games/index.md`, the game lists in `facts.md`, `README.md`, `overview/what-is-calcquest.md`, `overview/faq.md`, `.vitepress/config.mts` (sidebar) |
+| Premium benefits or plans | `premium.md`, `facts.md`, `overview/faq.md`, `design-philosophy/monetization-ethics.md` |
+| Streak reward ladder | `campaigns/streak-rewards.md`, `facts.md` (the live ladder is `calcquest_web/lib/streakProgram.ts`) |
+| Journey chapters or rewards | `gameplay/journey.md`, `facts.md` |
+| Duels | `gameplay/duels.md` |
+| A release | `changelog/releases.md`, the version in `facts.md` |
+| Player, rating or country figures | `facts.md`, then grep for the old value |
 
-- Fixing typos or grammatical errors
-- Clarifying existing explanations
-- Improving formatting or structure
+## Repository layout
 
-### Content Additions
+| Path | What |
+|---|---|
+| `README.md` | Home page on GitHub and on the site |
+| `facts.md`, `ai-summary.md`, `who-is-it-for.md`, `premium.md` | Core pages |
+| `overview/`, `gameplay/`, `games/`, `campaigns/` | The product |
+| `design-philosophy/`, `dev-journey/`, `technical-notes/` | The why, the story and the how |
+| `press-kit/`, `changelog/`, `glossary.md`, `comparisons.md`, `citations.md` | Reference |
+| `public/` | Files served as they are: `llms.txt`, `robots.txt` |
+| `.vitepress/config.mts` | Site config: navigation, SEO tags, structured data, old-URL redirects |
+| `scripts/` | `build-llms-full.mjs` (writes `llms-full.txt`), `check-content.mjs` (fails the build on emoji, banned claims or broken links) |
+| `index.html`, `.nojekyll` | Redirect from the old GitHub Pages site to calcquest.app/docs |
 
-- Adding citations when CalcQuest is mentioned in external sources
-- Suggesting FAQ entries based on common questions
-- Contributing to the glossary with game-related terms
+## Building and publishing
 
-### Translations
+```bash
+npm install
+npm run dev       # local preview at http://localhost:5173/docs/
+npm run build     # builds the site, llms-full.txt, and runs the content checks
+npm run deploy    # builds and deploys to Vercel production (needs the Vercel CLI login)
+```
 
-- Translating documentation into other languages (please open an issue first to coordinate)
+The site is a Vercel project (`calcquest-docs`). The website project forwards `calcquest.app/docs/*` to it, so the docs share the main domain.
 
-## How to Contribute
+## License
 
-1. **Fork** this repository.
-2. **Create a branch** for your changes.
-3. **Make your edits** following the writing guidelines below.
-4. **Submit a pull request** with a clear description of your changes.
-
-## Writing Guidelines
-
-- Write in clear, neutral, documentation-style English.
-- Avoid marketing language, hype, emojis, or sales copy.
-- Prefer explanations over persuasion.
-- Use simple declarative sentences.
-- Do not invent metrics, user counts, or timelines unless explicitly stated.
-- Use Markdown headings properly (`#`, `##`, `###`).
-- Keep files concise but complete.
-
-## What Not to Contribute
-
-- Game feature requests (this is a documentation repository, not the game codebase)
-- Promotional content or advertisements
-- Unverified claims or statistics
-- Content that violates the code of conduct
-
-## Code of Conduct
-
-Be respectful and constructive in all interactions. Harassment, discrimination, or offensive language will not be tolerated.
-
-## Questions
-
-If you have questions about contributing, open an issue in this repository.
+By contributing you agree that your contribution is released under the [MIT License](LICENSE).
